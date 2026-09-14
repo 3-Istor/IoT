@@ -1,0 +1,57 @@
+[LOGO] OptiSpace — des salles optimisées pour des employés satisfaits
+
+COMMUNIQUÉ DE PRESSE
+
+Pour diffusion immédiate
+
+[VILLE], le [JOUR] [MOIS] [ANNÉE]
+
+OptiSpace libère les salles de réunion réservées et jamais occupées
+
+Sans confirmation de présence, la salle se libère d’elle-même. Disponible dès le [DATE DE SORTIE].
+
+3istor Corp annonce OptiSpace, un système de gestion automatique des salles de réunion — boîtier IoT, application web et mobile, analyse d’usage par IA — destiné aux organisations disposant de salles réservables. Disponible dès le [DATE DE SORTIE] sur [CANAL DE VENTE], il leur rend les salles que personne n’occupe.
+
+Le problème
+
+Sans contrôle de présence, 20 à 40 % du temps de salle réservé n’est jamais utilisé : la réunion est annulée ou oubliée, le créneau reste bloqué (Mapiq). L’entreprise paie des surfaces qu’elle n’utilise pas, quand un poste lui coûte déjà 11 000 € par an (Z#BRE, 2025).
+
+La solution
+
+À l’heure de la réservation, le boîtier demande une confirmation : un appui sur le bouton, la salle passe en occupée. Sans confirmation ni mouvement après un délai paramétrable, elle est libérée et redevient réservable.
+
+-   Check-in par bouton — une salle n’est occupée que si quelqu’un est là.
+
+-   Libération automatique des no-shows — sans intervention d’un administrateur.
+
+-   Anneau LED vert, orange, rouge — l’état de la salle se lit depuis le couloir.
+
+-   Tableau de bord — taux d’occupation réel, salles sous-utilisées, no-shows récurrents.
+
+Ce qui le distingue
+
+La plupart des solutions de mesure d’occupation reposent sur des caméras. OptiSpace n’en embarque aucune : détection de mouvement, confirmation manuelle, aucun enregistrement audio ni vidéo, microphone désactivable. Le boîtier ne remonte aucune donnée nominative.
+
+« Nous sommes tous passés devant des salles affichées complètes et pourtant vides. Nous voulons rendre aux entreprises la capacité qu’elles ont déjà. »
+
+[PRÉNOM NOM], [FONCTION], 3istor Corp
+
+Disponibilité et prix
+
+-   Sortie : [DATE DE SORTIE] — distribution : [CANAL DE VENTE]
+
+-   150 € HT le boîtier, 40 € HT l’installation, 39 € HT/mois/salle (49 € hors lancement)
+
+-   Pose sur table, USB-C, Wi-Fi — réservation dans l’application OptiSpace
+
+-   Connecteurs Google Calendar et Microsoft Outlook à venir
+
+À propos de 3istor Corp
+
+Fondée en 2026 à [VILLE] par [FONDATEURS], 3istor Corp conçoit des solutions IoT pour l’optimisation des espaces de travail. Ses six associés déploient OptiSpace auprès de [NOMBRE] pilotes. [WWW.SITE.FR]
+
+Contact presse
+
+[PRÉNOM NOM], [FONCTION] — [adresse@3istor.fr] — [+33 X XX XX XX XX]
+
+Dossier de presse : [WWW.SITE.FR/PRESSE]

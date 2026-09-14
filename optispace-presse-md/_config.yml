@@ -1,0 +1,17 @@
+# Réglages du site. Modifiez ici, pas dans le HTML.
+title: "Espace presse — OptiSpace | 3istor Corp"
+description: "Visuels haute définition, communiqué, fiche produit et contact presse."
+company: "3istor Corp"
+baseline: "Des salles optimisées pour des employés satisfaits"
+mention: "Projet pédagogique réalisé dans le cadre du cursus SIGL — EPITA, promotion 2026. 3istor Corp et OptiSpace sont fictifs."
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: false
+
+# Fichiers à ne pas publier
+exclude:
+  - README.md
+  - assets/README.md
