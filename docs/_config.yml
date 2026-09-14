@@ -1,5 +1,6 @@
 # Réglages du site. Modifiez ici, pas dans le HTML.
 title: "Espace presse — OptiSpace | 3istor Corp"
+baseurl: "/IoT"
 description: "Visuels haute définition, communiqué, fiche produit et contact presse."
 company: "3istor Corp"
 baseline: "Des salles optimisées pour des employés satisfaits"
