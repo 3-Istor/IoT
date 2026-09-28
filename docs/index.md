@@ -63,7 +63,32 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 
 ## Visuels haute définition {#visuels}
 
-Téléchargeables directement, sans inscription ni formulaire. Faites défiler le carrousel : chaque angle se télécharge en pleine définition.
+Téléchargeables directement, sans inscription ni formulaire.
+
+<p data-if-model hidden>Le boîtier se manipule en 3D ci-dessous. Chaque angle du carrousel se télécharge en pleine définition.</p>
+<p data-unless-model>Faites défiler le carrousel : chaque angle se télécharge en pleine définition.</p>
+
+<div class="viewer3d" data-viewer3d hidden>
+  <model-viewer
+    src="assets/models/optispace.glb"
+    poster="assets/images/objet/optispace-01-face.png"
+    alt="Modèle 3D du boîtier OptiSpace, manipulable à la souris et au doigt"
+    camera-controls
+    touch-action="pan-y"
+    auto-rotate
+    rotation-per-second="18deg"
+    shadow-intensity="1"
+    exposure="1.1"
+    environment-image="neutral">
+  </model-viewer>
+  <p class="hint">
+    <span class="key">Glisser</span> pour tourner
+    <span class="key">Molette</span> pour zoomer
+    <a href="assets/models/optispace.glb" download>Télécharger le modèle (.glb)</a>
+  </p>
+</div>
+
+<h3 data-if-model hidden>Les six angles</h3>
 
 <div class="carousel" data-carousel>
   <div class="carousel-frame">

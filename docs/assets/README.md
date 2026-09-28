@@ -18,6 +18,7 @@ Respectez ces noms de fichiers exactement : la page les appelle tels quels.
 
 | Fichier | Contenu | Format conseillé |
 |---|---|---|
+| `models/optispace.glb` | Modèle 3D du boîtier, manipulable sur la page (voir `models/README.md`) | moins de 5 Mo |
 | `optispace-situation-16-9.jpg` | Boîtier en situation, sur une table de salle de réunion | 2400 × 1350 px |
 | `optispace-application-16-9.jpg` | Capture de l'application web et mobile | 2400 × 1350 px |
 
