@@ -11,7 +11,7 @@
 
 <header class="topbar">
   <div class="wrap">
-    <span class="brand"><span class="mark"></span> {{ site.company }}</span>
+    <span class="brand"><img class="mark" src="{{ '/assets/images/3istor_new_dark.png' | relative_url }}" alt=""> {{ site.company }}</span>
     <nav>
       <a href="#produit">Le produit</a>
       <a href="#fiche">Fiche produit</a>
@@ -60,6 +60,8 @@
     <p class="note">{{ site.mention }}</p>
   </div>
 </footer>
+
+<script defer src="{{ '/assets/js/carousel.js' | relative_url }}"></script>
 
 </body>
 </html>

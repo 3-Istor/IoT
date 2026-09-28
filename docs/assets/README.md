@@ -1,17 +1,25 @@
-# Visuels à déposer dans ce dossier
+# Visuels
+
+## Déjà fournis
+
+| Fichier | Contenu |
+|---|---|
+| `images/objet/optispace-01-face.png` … `optispace-06-anneau-led.png` | Les 6 angles du boîtier, affichés dans le carrousel de la section « Visuels » |
+| `images/3istor_new_dark.png` | Logo 3istor Corp (barre du haut + tuile de téléchargement) |
+| `images/arthur.presle.jpg`, `brian.peret.jpeg`, `hugo.guillet.jpg`, `joe.bejjani.jpg`, `newfel.levrel.jpg`, `raphael.ye.jpg` | Portraits des six associés, cadrage carré appliqué en CSS |
+
+Pour ajouter un angle au carrousel : déposez le fichier dans `images/objet/`, puis
+ajoutez un `<li class="carousel-slide" data-caption="…">` dans `index.md`. Le
+compteur, les pastilles et le lien de téléchargement se mettent à jour seuls.
+
+## Encore attendus
 
 Respectez ces noms de fichiers exactement : la page les appelle tels quels.
 
 | Fichier | Contenu | Format conseillé |
 |---|---|---|
-| `optispace-produit-16-9.jpg` | Produit détouré sur fond blanc, horizontal | 2400 × 1350 px |
-| `optispace-produit-3-4.jpg` | Produit détouré, vertical | 1500 × 2000 px |
 | `optispace-situation-16-9.jpg` | Boîtier en situation, sur une table de salle de réunion | 2400 × 1350 px |
 | `optispace-application-16-9.jpg` | Capture de l'application web et mobile | 2400 × 1350 px |
-| `optispace-led-3-4.jpg` | Détail de l'anneau LED, vertical | 1500 × 2000 px |
-| `logo-3istor.png` | Logo sur fond transparent | 1000 px de large minimum |
-| `logo-3istor.svg` | Logo vectoriel | — |
-| `equipe-1.jpg` … `equipe-6.jpg` | Portraits des six associés, cadrage carré | 1200 × 1200 px |
 
 Le communiqué est déjà présent : `communique-presse-optispace.pdf` et `communique-presse-optispace.txt`.
 
