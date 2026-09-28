@@ -140,7 +140,7 @@ Fondée en 2026 au Kremlin-Bicêtre par Newfel Levrel, 3istor Corp conçoit des 
 ## Contact presse {#contact}
 
 **Hugo GUILLET**, Chargé de presse<br>
-[hugo.guillet@epita.fr](mailto:hugo.guillet@epita.fr), +33 7 86 25 39 06
+[hugo.guillet@epita.fr](mailto:hugo.guillet@epita.fr), +33 7 32 76 10 92
 
 Nous répondons aux demandes de visuels complémentaires, d'interview ou de test produit sous 48 heures ouvrées.
 
