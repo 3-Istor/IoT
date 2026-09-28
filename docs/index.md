@@ -51,7 +51,7 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 | Connectivité | Wi-Fi |
 | Alimentation | USB-C |
 | Installation | Pose sur table, aucun câblage réseau ni travaux |
-| Dimensions | 42 × 40 × 38 mm |
+| Dimensions | 14 × 14 × 23 cm, micro déployé |
 | Prix du matériel | 150 € HT par boîtier, 40 € HT d'installation par salle |
 | Abonnement | 39 € HT par mois et par salle jusqu'en 2028 |
 | Disponibilité | 15 janvier 2027 |
@@ -64,13 +64,11 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 
 Téléchargeables directement, sans inscription ni formulaire.
 
-<p data-if-model hidden>Le boîtier se manipule en 3D ci-dessous. Chaque angle du carrousel se télécharge en pleine définition.</p>
-<p data-unless-model>Faites défiler le carrousel : chaque angle se télécharge en pleine définition.</p>
+<p data-if-model hidden>Le boîtier se manipule en 3D ci-dessous.</p>
 
 <div class="viewer3d" data-viewer3d hidden>
   <model-viewer
     src="assets/models/optispace.glb"
-    poster="assets/images/objet/optispace-01-face.png"
     alt="Modèle 3D du boîtier OptiSpace, manipulable à la souris et au doigt"
     camera-controls
     touch-action="pan-y"
@@ -83,7 +81,7 @@ Téléchargeables directement, sans inscription ni formulaire.
   <p class="hint">
     <span class="key">Glisser</span> pour tourner
     <span class="key">Molette</span> pour zoomer
-    <a href="assets/models/optispace.glb" download>Télécharger le modèle (.glb)</a>
+    <a href="assets/models/optispace.glb" download>Télécharger le .glb</a>
   </p>
 </div>
 
@@ -93,33 +91,23 @@ Téléchargeables directement, sans inscription ni formulaire.
   <div class="carousel-frame">
     <div class="carousel-viewport">
       <ul class="carousel-track">
-        <li class="carousel-slide" data-caption="En situation : posé sur la table d'une salle de réunion">
-          <img src="assets/images/objet/optispace-07-situation.jpg" alt="Le boîtier OptiSpace posé sur une table en bois de salle de réunion, anneau LED vert, à côté d'une tasse et d'une plante">
+        <li class="carousel-slide" data-caption="En réunion : anneau rouge, la présence a été confirmée">
+          <img src="assets/images/objet/optispace-situation-01.png" alt="Quatre personnes en réunion autour d'une table, le boîtier OptiSpace au centre, anneau LED rouge, un écran affichant un plan de projet au fond">
+        </li>
+        <li class="carousel-slide" data-caption="Anneau vert : la salle est libre et réservable">
+          <img src="assets/images/objet/optispace-situation-02.jpg" alt="Le boîtier OptiSpace posé sur une table en bois de salle de réunion, anneau LED vert, à côté d'une tasse et d'une plante">
         </li>
       </ul>
     </div>
-    <span class="carousel-count">1 / 1</span>
+    <span class="carousel-count">1 / 2</span>
     <button class="carousel-nav prev" type="button" aria-label="Visuel précédent">&lsaquo;</button>
     <button class="carousel-nav next" type="button" aria-label="Visuel suivant">&rsaquo;</button>
   </div>
   <div class="carousel-bar">
-    <p class="carousel-caption">En situation : posé sur la table d'une salle de réunion</p>
+    <p class="carousel-caption">En réunion : anneau rouge, la présence a été confirmée</p>
     <div class="carousel-dots" role="tablist" aria-label="Choisir un visuel"></div>
-    <a class="carousel-dl" href="assets/images/objet/optispace-07-situation.jpg" download>Télécharger ce visuel</a>
+    <a class="carousel-dl" href="assets/images/objet/optispace-situation-01.png" download>Télécharger ce visuel</a>
   </div>
-</div>
-
-### Autres visuels
-
-<div class="gallery">
-  <figure class="tile">
-    <div class="ph r-16-9">Capture de l'application web et mobile<code>assets/optispace-application-16-9.jpg</code></div>
-    <figcaption><span>Application</span><a href="assets/optispace-application-16-9.jpg" download>Télécharger</a></figcaption>
-  </figure>
-  <figure class="tile">
-    <img src="assets/images/3istor_new_dark.png" alt="Logo de 3istor Corp">
-    <figcaption><span>Logo 3istor Corp</span><a href="assets/images/3istor_new_dark.png" download>Télécharger</a></figcaption>
-  </figure>
 </div>
 
 > **Conditions d'utilisation**
