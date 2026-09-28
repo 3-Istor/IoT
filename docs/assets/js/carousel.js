@@ -6,7 +6,7 @@
   function init(root) {
     var viewport = root.querySelector('.carousel-viewport');
     var slides = Array.prototype.slice.call(root.querySelectorAll('.carousel-slide'));
-    if (!viewport || slides.length < 2) return;
+    if (!viewport || !slides.length) return;
 
     var prev = root.querySelector('.carousel-nav.prev');
     var next = root.querySelector('.carousel-nav.next');
@@ -15,6 +15,16 @@
     var download = root.querySelector('.carousel-dl');
     var count = root.querySelector('.carousel-count');
     var index = 0;
+
+    // Une seule image : ni flèches, ni pastilles, ni compteur.
+    if (slides.length === 1) {
+      root.classList.add('is-single');
+      var only = slides[0];
+      var onlyImg = only.querySelector('img');
+      if (caption) caption.textContent = only.getAttribute('data-caption') || '';
+      if (download && onlyImg) download.href = onlyImg.getAttribute('src');
+      return;
+    }
 
     var dots = slides.map(function (slide, i) {
       var dot = document.createElement('button');

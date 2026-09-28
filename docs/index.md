@@ -93,22 +93,19 @@ Téléchargeables directement, sans inscription ni formulaire.
   <div class="carousel-frame">
     <div class="carousel-viewport">
       <ul class="carousel-track">
-        <li class="carousel-slide" data-caption="Vue de face : écran d'état et anneau LED vert, salle libre">
-          <img src="assets/images/objet/optispace-01-face.png" alt="Le boîtier OptiSpace de face, écran affichant « Salle Oslo, Libre » et anneau LED vert">
-        </li>
         <li class="carousel-slide" data-caption="En situation : posé sur la table d'une salle de réunion">
           <img src="assets/images/objet/optispace-07-situation.jpg" alt="Le boîtier OptiSpace posé sur une table en bois de salle de réunion, anneau LED vert, à côté d'une tasse et d'une plante">
         </li>
       </ul>
     </div>
-    <span class="carousel-count">1 / 2</span>
+    <span class="carousel-count">1 / 1</span>
     <button class="carousel-nav prev" type="button" aria-label="Visuel précédent">&lsaquo;</button>
     <button class="carousel-nav next" type="button" aria-label="Visuel suivant">&rsaquo;</button>
   </div>
   <div class="carousel-bar">
-    <p class="carousel-caption">Vue de face : écran d'état et anneau LED vert, salle libre</p>
+    <p class="carousel-caption">En situation : posé sur la table d'une salle de réunion</p>
     <div class="carousel-dots" role="tablist" aria-label="Choisir un visuel"></div>
-    <a class="carousel-dl" href="assets/images/objet/optispace-01-face.png" download>Télécharger ce visuel</a>
+    <a class="carousel-dl" href="assets/images/objet/optispace-07-situation.jpg" download>Télécharger ce visuel</a>
   </div>
 </div>
 
