@@ -20,7 +20,7 @@ Le créneau abandonné retourne dans les salles disponibles sans qu'un administr
 
 ### Statut lisible depuis le couloir
 
-Un anneau LED indique l'état de la salle — vert pour libre, orange en attente de confirmation, rouge pour occupée — sans avoir à ouvrir son agenda.
+Un anneau LED indique l'état de la salle : vert pour libre, orange en attente de confirmation, rouge pour occupée, sans avoir à ouvrir son agenda.
 
 ### Application web et mobile
 
@@ -38,13 +38,13 @@ Aucune caméra, aucun enregistrement audio ni vidéo, microphone désactivable p
 
 ## Fiche produit {#fiche}
 
-Caractéristiques factuelles, à jour au <mark>[DATE]</mark>.
+Caractéristiques factuelles, à jour au 25 septembre 2027.
 
 | Caractéristique | Détail |
 |---|---|
 | Nom commercial | OptiSpace |
-| Type | Boîtier IoT de gestion de salle, application web et mobile, service cloud |
-| Détection de présence | Capteur de présence, complété par une confirmation manuelle au bouton <mark>[préciser la technologie du capteur]</mark> |
+| Type | Boîtier IoT de gestion de salle, application web et mobile, service cloud avec analyse des résultats par IA |
+| Détection de présence | Détection de mouvement, complétée par une confirmation manuelle au bouton |
 | Interface | Bouton de confirmation physique, écran d'état, anneau LED tricolore, signal sonore de vérification |
 | Caméra | Aucune |
 | Microphone | Présent pour la détection sonore de présence, désactivable physiquement. Aucun enregistrement audio. |
@@ -53,10 +53,10 @@ Caractéristiques factuelles, à jour au <mark>[DATE]</mark>.
 | Installation | Pose sur table, aucun câblage réseau ni travaux |
 | Dimensions et poids | <mark>[à compléter]</mark> |
 | Prix du matériel | 150 € HT par boîtier, 40 € HT d'installation par salle |
-| Abonnement | 39 € HT par mois et par salle en offre de lancement, 49 € HT ensuite |
-| Disponibilité | <mark>[DATE DE SORTIE]</mark> |
-| Distribution | <mark>[CANAL DE VENTE]</mark> |
-| Compatibilités | Application OptiSpace web et mobile. Connecteurs Google Calendar et Microsoft Outlook prévus <mark>[échéance]</mark> |
+| Abonnement | 39 € HT par mois et par salle jusqu'en 2028 |
+| Disponibilité | 15 janvier 2027 |
+| Distribution | Devis sur demande, directement depuis le site de 3istor Corp |
+| Compatibilités | Application OptiSpace web et mobile. Connecteurs Google Calendar et Microsoft Outlook prévus, pour s'intégrer aux gestionnaires de salles existants |
 | Garantie | <mark>[à compléter]</mark> |
 
 ---
@@ -69,22 +69,22 @@ Téléchargeables directement, sans inscription ni formulaire. Faites défiler l
   <div class="carousel-frame">
     <div class="carousel-viewport">
       <ul class="carousel-track">
-        <li class="carousel-slide" data-caption="Vue de face — écran d'état et anneau LED vert, salle libre">
-          <img src="assets/images/objet/optispace-01-face.png" alt="Le boîtier OptiSpace de face, écran affichant « Salle Oslo — Libre » et anneau LED vert">
+        <li class="carousel-slide" data-caption="Vue de face : écran d'état et anneau LED vert, salle libre">
+          <img src="assets/images/objet/optispace-01-face.png" alt="Le boîtier OptiSpace de face, écran affichant « Salle Oslo, Libre » et anneau LED vert">
         </li>
-        <li class="carousel-slide" data-caption="Trois quarts avant — micro sur col de cygne et façade avant">
+        <li class="carousel-slide" data-caption="Trois quarts avant : micro sur col de cygne et façade avant">
           <img src="assets/images/objet/optispace-02-trois-quarts.png" alt="Le boîtier OptiSpace vu de trois quarts, micro sur col de cygne déployé">
         </li>
-        <li class="carousel-slide" data-caption="Perspective — connectique RJ45 et USB-C en façade">
-          <img src="assets/images/objet/optispace-03-perspective.png" alt="Le boîtier OptiSpace en perspective, ports RJ45 et USB-C visibles en façade">
+        <li class="carousel-slide" data-caption="Perspective : trois quarts avant droit">
+          <img src="assets/images/objet/optispace-03-perspective.png" alt="Le boîtier OptiSpace vu en perspective, trois quarts avant droit">
         </li>
-        <li class="carousel-slide" data-caption="Vue plongeante — encombrement réel sur une table">
+        <li class="carousel-slide" data-caption="Vue plongeante : encombrement réel sur une table">
           <img src="assets/images/objet/optispace-04-plongee.png" alt="Le boîtier OptiSpace vu en plongée, posé sur un plan blanc">
         </li>
-        <li class="carousel-slide" data-caption="Vue arrière — aucune caméra, coque pleine">
+        <li class="carousel-slide" data-caption="Vue arrière : aucune caméra, coque pleine">
           <img src="assets/images/objet/optispace-05-arriere.png" alt="Le boîtier OptiSpace vu de l'arrière, coque pleine sans caméra">
         </li>
-        <li class="carousel-slide" data-caption="Détail de l'anneau LED — vert pour une salle libre">
+        <li class="carousel-slide" data-caption="Détail de l'anneau LED : vert pour une salle libre">
           <img src="assets/images/objet/optispace-06-anneau-led.png" alt="Détail de l'anneau LED vert du boîtier OptiSpace">
         </li>
       </ul>
@@ -94,7 +94,7 @@ Téléchargeables directement, sans inscription ni formulaire. Faites défiler l
     <button class="carousel-nav next" type="button" aria-label="Visuel suivant">&rsaquo;</button>
   </div>
   <div class="carousel-bar">
-    <p class="carousel-caption">Vue de face — écran d'état et anneau LED vert, salle libre</p>
+    <p class="carousel-caption">Vue de face : écran d'état et anneau LED vert, salle libre</p>
     <div class="carousel-dots" role="tablist" aria-label="Choisir un visuel"></div>
     <a class="carousel-dl" href="assets/images/objet/optispace-01-face.png" download>Télécharger ce visuel</a>
   </div>
@@ -119,7 +119,7 @@ Téléchargeables directement, sans inscription ni formulaire. Faites défiler l
 
 > **Conditions d'utilisation**
 >
-> Visuels libres de droits pour usage éditorial, crédit : <mark>3istor Corp</mark>. Toute utilisation commerciale ou publicitaire nécessite un accord écrit préalable. Les visuels ne doivent pas être modifiés autrement que par recadrage.
+> Visuels libres de droits pour usage éditorial, crédit : 3istor Corp. Toute utilisation commerciale ou publicitaire nécessite un accord écrit préalable. Les visuels ne doivent pas être modifiés autrement que par recadrage.
 
 ---
 
@@ -129,9 +129,9 @@ Portraits téléchargeables, mêmes conditions d'utilisation que les visuels pro
 
 <div class="team">
   <div class="member"><img src="assets/images/arthur.presle.jpg" alt="Portrait de Arthur Presle"><div class="name">Arthur Presle</div><div class="role"><mark>[Fonction]</mark></div></div>
-  <div class="member"><img src="assets/images/hugo.guillet.jpg" alt="Portrait de Hugo Guillet"><div class="name">Hugo Guillet</div><div class="role"><mark>[Fonction]</mark></div></div>
+  <div class="member"><img src="assets/images/hugo.guillet.jpg" alt="Portrait de Hugo Guillet"><div class="name">Hugo Guillet</div><div class="role">Chargé de presse</div></div>
   <div class="member"><img src="assets/images/joe.bejjani.jpg" alt="Portrait de Joe Bejjani"><div class="name">Joe Bejjani</div><div class="role"><mark>[Fonction]</mark></div></div>
-  <div class="member"><img src="assets/images/newfel.levrel.jpg" alt="Portrait de Newfel Levrel"><div class="name">Newfel Levrel</div><div class="role"><mark>[Fonction]</mark></div></div>
+  <div class="member"><img src="assets/images/newfel.levrel.jpg" alt="Portrait de Newfel Levrel"><div class="name">Newfel Levrel</div><div class="role">CEO</div></div>
   <div class="member"><img src="assets/images/raphael.ye.jpg" alt="Portrait de Raphaël Ye"><div class="name">Raphaël Ye</div><div class="role"><mark>[Fonction]</mark></div></div>
   <div class="member"><img src="assets/images/brian.peret.jpeg" alt="Portrait de Brian Peret"><div class="name">Brian Peret</div><div class="role"><mark>[Fonction]</mark></div></div>
 </div>
@@ -140,21 +140,15 @@ Portraits téléchargeables, mêmes conditions d'utilisation que les visuels pro
 
 ## À propos de 3istor Corp {#entreprise}
 
-Fondée en 2026 au <mark>Kremelin-Bicêtre</mark> par <mark>nos 6 membres</mark>, 3istor Corp conçoit des solutions IoT pour l'optimisation des espaces de travail. La société réunit six associés et déploie OptiSpace, son premier produit.
-
-<!-- **Faits marquants** — Six associés fondateurs · Premier produit : OptiSpace · <mark>[levée de fonds]</mark> · <mark>[incubateur]</mark> · <mark>[clients pilotes]</mark>
-
-**Historique** — <mark>[2026]</mark> création de la société · <mark>[date]</mark> premiers pilotes · <mark>[date]</mark> lancement commercial d'OptiSpace
-
-**Site** — <mark>[www.site.fr]</mark> -->
+Fondée en 2026 au Kremlin-Bicêtre par Newfel Levrel, 3istor Corp conçoit des solutions IoT dédiées à l'optimisation des espaces de travail. La société réunit six associés et déploie OptiSpace, son premier produit.
 
 ---
 
 ## Contact presse {#contact}
 
-**[Prénom NOM]** — [Fonction]<br>
-[adresse@3istor.fr](mailto:adresse@3istor.fr) — +33 X XX XX XX XX
+**Hugo GUILLET**, Chargé de presse<br>
+[hugo.guillet@epita.fr](mailto:hugo.guillet@epita.fr), +33 7 86 25 39 06
 
 Nous répondons aux demandes de visuels complémentaires, d'interview ou de test produit sous 48 heures ouvrées.
 
-[Communiqué de presse (PDF)](assets/communique-presse-optispace.pdf){: .btn .btn-primary download="download"} [Communiqué en texte brut](assets/communique-presse-optispace.txt){: .btn .btn-ghost download="download"}
+[Communiqué de presse (PDF)](assets/Communique_de_presse_OptiSpace_3istor_Corp_VF.pdf){: .btn .btn-primary download="download"}

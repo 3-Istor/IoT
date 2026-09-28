@@ -21,6 +21,6 @@ Respectez ces noms de fichiers exactement : la page les appelle tels quels.
 | `optispace-situation-16-9.jpg` | Boîtier en situation, sur une table de salle de réunion | 2400 × 1350 px |
 | `optispace-application-16-9.jpg` | Capture de l'application web et mobile | 2400 × 1350 px |
 
-Le communiqué est déjà présent : `communique-presse-optispace.pdf` et `communique-presse-optispace.txt`.
+Le communiqué est déjà présent : `Communique_de_presse_OptiSpace_3istor_Corp_VF.pdf` (et sa source `.docx`).
 
-Deux règles à ne pas contourner : pas de formulaire avant le téléchargement, et des fichiers réellement en haute définition — une image de 600 px ne sera pas utilisée en presse écrite.
+Deux règles à ne pas contourner : pas de formulaire avant le téléchargement, et des fichiers réellement en haute définition : une image de 600 px ne sera pas utilisée en presse écrite.

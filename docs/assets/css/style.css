@@ -1,5 +1,5 @@
 /* ============================================================
-   Espace presse OptiSpace — feuille de style
+   Espace presse OptiSpace, feuille de style
    Le contenu est écrit en Markdown (index.md). Ce fichier
    habille les éléments Markdown standards : titres, tableaux,
    listes, citations, images.
@@ -64,7 +64,7 @@ main blockquote{margin:24px 0;padding:20px 26px;background:#fff;border-left:3px 
 main blockquote p:last-child{margin-bottom:0}
 main code{background:var(--bg-alt);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.88em}
 
-/* tableaux — la fiche produit */
+/* tableaux : la fiche produit */
 main table{border-collapse:collapse;width:100%;font-size:15.5px;margin:8px 0 24px;display:block;overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
 main table thead{display:none}
 main table th,main table td{text-align:left;padding:13px 20px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -86,7 +86,8 @@ mark{background:#FFF6E6;color:#B8730B;border:1px solid #F2DCB3;border-radius:5px
 .team{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin:8px 0 28px}
 @media(max-width:900px){.team{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:520px){.team{grid-template-columns:repeat(2,1fr)}}
-.member img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius)}
+/* recadrage par le haut : les portraits verticaux gardent la tête entière */
+.member img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 10%;background:var(--bg-alt);border-radius:var(--radius)}
 .member .name{font-weight:600;font-size:15px;margin-top:10px}
 .member .role{font-size:13.5px;color:var(--ink-faint)}
 

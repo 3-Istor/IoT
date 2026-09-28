@@ -1,4 +1,4 @@
-# Espace presse OptiSpace — 3istor Corp
+# Espace presse OptiSpace, 3istor Corp
 
 Page presse publiée avec **GitHub Pages**. Le contenu est écrit en **Markdown** (`index.md`) ; GitHub le convertit en HTML à chaque modification, via Jekyll.
 
@@ -38,9 +38,9 @@ Les couleurs sont regroupées tout en haut de `style.css`, dans le bloc `:root` 
 
 ## Conventions d'écriture dans `index.md`
 
-- `## Titre {#ancre}` — l'ancre est imposée pour que les liens du menu ne cassent pas. Ne la supprimez pas.
-- `<mark>[texte]</mark>` — affiche une pastille orange « à compléter ». Retirez la balise quand l'information est renseignée.
-- `> texte` — encadré à filet vert, utilisé pour les conditions d'utilisation.
+- `## Titre {#ancre}` : l'ancre est imposée pour que les liens du menu ne cassent pas. Ne la supprimez pas.
+- `<mark>[texte]</mark>` : affiche une pastille orange « à compléter ». Retirez la balise quand l'information est renseignée.
+- `> texte` : encadré à filet vert, utilisé pour les conditions d'utilisation.
 - Les tableaux Markdown standard donnent la mise en forme de la fiche produit.
 
 ## Les visuels
