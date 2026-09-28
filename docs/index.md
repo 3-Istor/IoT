@@ -51,13 +51,12 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 | Connectivité | Wi-Fi |
 | Alimentation | USB-C |
 | Installation | Pose sur table, aucun câblage réseau ni travaux |
-| Dimensions et poids | <mark>[à compléter]</mark> |
+| Dimensions | 42 × 40 × 38 mm |
 | Prix du matériel | 150 € HT par boîtier, 40 € HT d'installation par salle |
 | Abonnement | 39 € HT par mois et par salle jusqu'en 2028 |
 | Disponibilité | 15 janvier 2027 |
 | Distribution | Devis sur demande, directement depuis le site de 3istor Corp |
 | Compatibilités | Application OptiSpace web et mobile. Connecteurs Google Calendar et Microsoft Outlook prévus, pour s'intégrer aux gestionnaires de salles existants |
-| Garantie | <mark>[à compléter]</mark> |
 
 ---
 
@@ -88,7 +87,7 @@ Téléchargeables directement, sans inscription ni formulaire.
   </p>
 </div>
 
-<h3 data-if-model hidden>Les visuels du boîtier</h3>
+<h3 data-if-model hidden>Le boîtier en situation</h3>
 
 <div class="carousel" data-carousel>
   <div class="carousel-frame">
@@ -97,27 +96,12 @@ Téléchargeables directement, sans inscription ni formulaire.
         <li class="carousel-slide" data-caption="Vue de face : écran d'état et anneau LED vert, salle libre">
           <img src="assets/images/objet/optispace-01-face.png" alt="Le boîtier OptiSpace de face, écran affichant « Salle Oslo, Libre » et anneau LED vert">
         </li>
-        <li class="carousel-slide" data-caption="Trois quarts avant : micro sur col de cygne et façade avant">
-          <img src="assets/images/objet/optispace-02-trois-quarts.png" alt="Le boîtier OptiSpace vu de trois quarts, micro sur col de cygne déployé">
-        </li>
-        <li class="carousel-slide" data-caption="Perspective : trois quarts avant droit">
-          <img src="assets/images/objet/optispace-03-perspective.png" alt="Le boîtier OptiSpace vu en perspective, trois quarts avant droit">
-        </li>
-        <li class="carousel-slide" data-caption="Vue plongeante : encombrement réel sur une table">
-          <img src="assets/images/objet/optispace-04-plongee.png" alt="Le boîtier OptiSpace vu en plongée, posé sur un plan blanc">
-        </li>
-        <li class="carousel-slide" data-caption="Vue arrière : aucune caméra, coque pleine">
-          <img src="assets/images/objet/optispace-05-arriere.png" alt="Le boîtier OptiSpace vu de l'arrière, coque pleine sans caméra">
-        </li>
-        <li class="carousel-slide" data-caption="Détail de l'anneau LED : vert pour une salle libre">
-          <img src="assets/images/objet/optispace-06-anneau-led.png" alt="Détail de l'anneau LED vert du boîtier OptiSpace">
-        </li>
         <li class="carousel-slide" data-caption="En situation : posé sur la table d'une salle de réunion">
           <img src="assets/images/objet/optispace-07-situation.jpg" alt="Le boîtier OptiSpace posé sur une table en bois de salle de réunion, anneau LED vert, à côté d'une tasse et d'une plante">
         </li>
       </ul>
     </div>
-    <span class="carousel-count">1 / 7</span>
+    <span class="carousel-count">1 / 2</span>
     <button class="carousel-nav prev" type="button" aria-label="Visuel précédent">&lsaquo;</button>
     <button class="carousel-nav next" type="button" aria-label="Visuel suivant">&rsaquo;</button>
   </div>
@@ -152,12 +136,12 @@ Téléchargeables directement, sans inscription ni formulaire.
 Portraits téléchargeables, mêmes conditions d'utilisation que les visuels produit.
 
 <div class="team">
-  <div class="member"><img src="assets/images/arthur.presle.jpg" alt="Portrait de Arthur Presle"><div class="name">Arthur Presle</div><div class="role"><mark>[Fonction]</mark></div></div>
-  <div class="member"><img src="assets/images/hugo.guillet.jpg" alt="Portrait de Hugo Guillet"><div class="name">Hugo Guillet</div><div class="role">Chargé de presse</div></div>
-  <div class="member"><img src="assets/images/joe.bejjani.jpg" alt="Portrait de Joe Bejjani"><div class="name">Joe Bejjani</div><div class="role"><mark>[Fonction]</mark></div></div>
+  <div class="member"><img src="assets/images/arthur.presle.jpg" alt="Portrait de Arthur Presle"><div class="name">Arthur Presle</div><div class="role">Développeur</div></div>
+  <div class="member"><img src="assets/images/hugo.guillet.jpg" alt="Portrait de Hugo Guillet"><div class="name">Hugo Guillet</div><div class="role">Chargé de presse et développeur</div></div>
+  <div class="member"><img src="assets/images/joe.bejjani.jpg" alt="Portrait de Joe Bejjani"><div class="name">Joe Bejjani</div><div class="role">Communication et développement</div></div>
   <div class="member"><img src="assets/images/newfel.levrel.jpg" alt="Portrait de Newfel Levrel"><div class="name">Newfel Levrel</div><div class="role">CEO</div></div>
-  <div class="member"><img src="assets/images/raphael.ye.jpg" alt="Portrait de Raphaël Ye"><div class="name">Raphaël Ye</div><div class="role"><mark>[Fonction]</mark></div></div>
-  <div class="member"><img src="assets/images/brian.peret.jpeg" alt="Portrait de Brian Peret"><div class="name">Brian Peret</div><div class="role"><mark>[Fonction]</mark></div></div>
+  <div class="member"><img src="assets/images/raphael.ye.jpg" alt="Portrait de Raphaël Ye"><div class="name">Raphaël Ye</div><div class="role">Développeur</div></div>
+  <div class="member"><img src="assets/images/brian.peret.jpeg" alt="Portrait de Brian Peret"><div class="name">Brian Peret</div><div class="role">DevOps</div></div>
 </div>
 
 ---

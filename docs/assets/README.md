@@ -4,14 +4,16 @@
 
 | Fichier | Contenu |
 |---|---|
-| `images/objet/optispace-01-face.png` … `optispace-07-situation.jpg` | Les 7 visuels du boîtier, affichés dans le carrousel de la section « Visuels » |
+| `images/objet/optispace-01-face.png`, `optispace-07-situation.jpg` | Les deux visuels du carrousel |
+| `images/objet/optispace-02-trois-quarts.png` … `optispace-06-anneau-led.png` | Rendus studio retirés du carrousel, conservés mais plus affichés |
 | `models/optispace.glb` | Modèle 3D manipulable, 832 ko, affiché en tête de la section « Visuels » |
 | `images/3istor_new_dark.png` | Logo 3istor Corp (barre du haut + tuile de téléchargement) |
 | `images/arthur.presle.jpg`, `brian.peret.jpeg`, `hugo.guillet.jpg`, `joe.bejjani.jpg`, `newfel.levrel.jpg`, `raphael.ye.jpg` | Portraits des six associés, cadrage carré appliqué en CSS |
 
-Pour ajouter un angle au carrousel : déposez le fichier dans `images/objet/`, puis
-ajoutez un `<li class="carousel-slide" data-caption="…">` dans `index.md`. Le
-compteur, les pastilles et le lien de téléchargement se mettent à jour seuls.
+Le carrousel n'accueille plus que des mises en situation. Pour en ajouter une :
+déposez le fichier dans `images/objet/`, puis ajoutez un
+`<li class="carousel-slide" data-caption="…">` dans `index.md`. Le compteur, les
+pastilles et le lien de téléchargement se mettent à jour seuls.
 
 ## Encore attendus
 
