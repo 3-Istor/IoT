@@ -124,7 +124,7 @@ Portraits téléchargeables, mêmes conditions d'utilisation que les visuels pro
   <div class="member"><img src="assets/images/arthur.presle.jpg" alt="Portrait de Arthur Presle"><div class="name">Arthur Presle</div><div class="role">Développeur</div></div>
   <div class="member"><img src="assets/images/hugo.guillet.jpg" alt="Portrait de Hugo Guillet"><div class="name">Hugo Guillet</div><div class="role">Chargé de presse et développeur</div></div>
   <div class="member"><img src="assets/images/joe.bejjani.jpg" alt="Portrait de Joe Bejjani"><div class="name">Joe Bejjani</div><div class="role">Communication et développement</div></div>
-  <div class="member"><img src="assets/images/newfel.levrel.jpg" alt="Portrait de Newfel Levrel"><div class="name">Newfel Levrel</div><div class="role">CEO</div></div>
+  <div class="member"><img src="assets/images/newfel.levrel.png" alt="Portrait de Newfel Levrel"><div class="name">Newfel Levrel</div><div class="role">CEO</div></div>
   <div class="member"><img src="assets/images/raphael.ye.jpg" alt="Portrait de Raphaël Ye"><div class="name">Raphaël Ye</div><div class="role">Développeur</div></div>
   <div class="member"><img src="assets/images/brian.peret.jpeg" alt="Portrait de Brian Peret"><div class="name">Brian Peret</div><div class="role">DevOps</div></div>
 </div>
