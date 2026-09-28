@@ -4,7 +4,8 @@
 
 | Fichier | Contenu |
 |---|---|
-| `images/objet/optispace-01-face.png` … `optispace-06-anneau-led.png` | Les 6 angles du boîtier, affichés dans le carrousel de la section « Visuels » |
+| `images/objet/optispace-01-face.png` … `optispace-07-situation.jpg` | Les 7 visuels du boîtier, affichés dans le carrousel de la section « Visuels » |
+| `models/optispace.glb` | Modèle 3D manipulable, 832 ko, affiché en tête de la section « Visuels » |
 | `images/3istor_new_dark.png` | Logo 3istor Corp (barre du haut + tuile de téléchargement) |
 | `images/arthur.presle.jpg`, `brian.peret.jpeg`, `hugo.guillet.jpg`, `joe.bejjani.jpg`, `newfel.levrel.jpg`, `raphael.ye.jpg` | Portraits des six associés, cadrage carré appliqué en CSS |
 
@@ -18,8 +19,6 @@ Respectez ces noms de fichiers exactement : la page les appelle tels quels.
 
 | Fichier | Contenu | Format conseillé |
 |---|---|---|
-| `models/optispace.glb` | Modèle 3D du boîtier, manipulable sur la page (voir `models/README.md`) | moins de 5 Mo |
-| `optispace-situation-16-9.jpg` | Boîtier en situation, sur une table de salle de réunion | 2400 × 1350 px |
 | `optispace-application-16-9.jpg` | Capture de l'application web et mobile | 2400 × 1350 px |
 
 Le communiqué est déjà présent : `Communique_de_presse_OptiSpace_3istor_Corp_VF.pdf` (et sa source `.docx`).

@@ -1,12 +1,16 @@
 # Modèle 3D du boîtier
 
-Déposez ici un fichier nommé exactement `optispace.glb`.
+`optispace.glb` est en place : glTF 2.0 binaire, 832 ko, 20 maillages,
+9 matériaux, exporté par THREE.GLTFExporter r184.
 
-Tant qu'il est absent, la page ne charge rien : le bloc 3D reste masqué et
-seul le carrousel d'images s'affiche. Dès que le fichier est en ligne, la
-visionneuse apparaît d'elle-même, sans aucune modification de `index.md`.
+Mesures relevées dans le modèle : 140 mm de côté au sol, 233 mm de haut
+micro compris, base à Y = 0, objet centré sur X et Z, 1 unité = 1 mètre.
 
-## Ce que le fichier doit respecter
+Le script `assets/js/viewer3d.js` teste la présence de ce fichier avant de
+charger la bibliothèque. Si vous le retirez, la page revient d'elle-même au
+carrousel seul, sans erreur.
+
+## Ce qu'un remplacement doit respecter
 
 | Point | Attendu |
 |---|---|

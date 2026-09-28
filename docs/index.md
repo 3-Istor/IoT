@@ -88,7 +88,7 @@ Téléchargeables directement, sans inscription ni formulaire.
   </p>
 </div>
 
-<h3 data-if-model hidden>Les six angles</h3>
+<h3 data-if-model hidden>Les visuels du boîtier</h3>
 
 <div class="carousel" data-carousel>
   <div class="carousel-frame">
@@ -112,9 +112,12 @@ Téléchargeables directement, sans inscription ni formulaire.
         <li class="carousel-slide" data-caption="Détail de l'anneau LED : vert pour une salle libre">
           <img src="assets/images/objet/optispace-06-anneau-led.png" alt="Détail de l'anneau LED vert du boîtier OptiSpace">
         </li>
+        <li class="carousel-slide" data-caption="En situation : posé sur la table d'une salle de réunion">
+          <img src="assets/images/objet/optispace-07-situation.jpg" alt="Le boîtier OptiSpace posé sur une table en bois de salle de réunion, anneau LED vert, à côté d'une tasse et d'une plante">
+        </li>
       </ul>
     </div>
-    <span class="carousel-count">1 / 6</span>
+    <span class="carousel-count">1 / 7</span>
     <button class="carousel-nav prev" type="button" aria-label="Visuel précédent">&lsaquo;</button>
     <button class="carousel-nav next" type="button" aria-label="Visuel suivant">&rsaquo;</button>
   </div>
@@ -128,10 +131,6 @@ Téléchargeables directement, sans inscription ni formulaire.
 ### Autres visuels
 
 <div class="gallery">
-  <figure class="tile">
-    <div class="ph r-16-9">Boîtier en situation, sur une table de salle de réunion<code>assets/optispace-situation-16-9.jpg</code></div>
-    <figcaption><span>En situation d'usage</span><a href="assets/optispace-situation-16-9.jpg" download>Télécharger</a></figcaption>
-  </figure>
   <figure class="tile">
     <div class="ph r-16-9">Capture de l'application web et mobile<code>assets/optispace-application-16-9.jpg</code></div>
     <figcaption><span>Application</span><a href="assets/optispace-application-16-9.jpg" download>Télécharger</a></figcaption>
