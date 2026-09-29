@@ -57,8 +57,7 @@ a:hover{text-decoration:underline}
 .videoband .eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--accent);font-weight:700;margin:0 0 12px}
 .videoband h2{font-size:clamp(25px,3vw,32px);letter-spacing:-.018em;line-height:1.15;
-  margin:0 0 10px;color:#fff}
-.videoband-lede{font-size:16.5px;color:#A9C2D6;margin:0 0 24px;max-width:44em}
+  margin:0 0 22px;color:#fff}
 
 .videoband-frame{border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
   overflow:hidden;background:#000;box-shadow:0 18px 44px rgba(0,0,0,.34)}
