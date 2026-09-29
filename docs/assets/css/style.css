@@ -51,6 +51,23 @@ a:hover{text-decoration:underline}
 .fact .n{font-size:27px;font-weight:700;letter-spacing:-.02em}
 .fact .l{font-size:14px;color:#A9C2D6;margin-top:2px;line-height:1.45}
 
+/* ---------- bandeau vidéo ---------- */
+/* Prolonge la bande sombre des chiffres clés : un seul bloc éditorial. */
+.videoband{background:var(--brand-deep);color:#fff;padding:10px 0 56px;scroll-margin-top:64px}
+.videoband .eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin:0 0 12px}
+.videoband h2{font-size:clamp(25px,3vw,32px);letter-spacing:-.018em;line-height:1.15;
+  margin:0 0 10px;color:#fff}
+.videoband-lede{font-size:16.5px;color:#A9C2D6;margin:0 0 24px;max-width:44em}
+
+.videoband-frame{border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
+  overflow:hidden;background:#000;box-shadow:0 18px 44px rgba(0,0,0,.34)}
+.videoband-frame video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+
+.videoband-note{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;
+  margin:14px 0 0;font-size:14px;color:#A9C2D6}
+.videoband-note a{color:#fff;font-weight:600;white-space:nowrap}
+
 /* ---------- contenu Markdown ---------- */
 main{padding:8px 0 40px}
 main h2{font-size:clamp(25px,3vw,32px);letter-spacing:-.018em;color:var(--brand-deep);margin:64px 0 10px;padding-top:8px;scroll-margin-top:84px}

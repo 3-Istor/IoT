@@ -14,5 +14,6 @@ kramdown:
 # Fichiers à ne pas publier
 exclude:
   - README.md
+  - "assets/Vidéo/"   # master non compressé, non publié
   - assets/README.md
   - assets/models/README.md

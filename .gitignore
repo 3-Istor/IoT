@@ -1,0 +1,3 @@
+# Rushes et masters vidéo : trop lourds pour Git (limite GitHub : 100 Mo).
+# Seule la version web compressée est versionnée (docs/assets/video/).
+docs/assets/Vidéo/
