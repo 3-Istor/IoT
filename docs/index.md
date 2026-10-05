@@ -8,15 +8,30 @@ lede: "Un boîtier posé sur la table de chaque salle demande une confirmation d
 
 OptiSpace est un système de gestion automatique des salles de réunion. Il associe un boîtier IoT installé dans chaque salle, une application web et mobile, un backend cloud et une couche d'analyse d'usage.
 
-À l'heure de la réservation, le boîtier demande une confirmation de présence : un appui sur le bouton physique et la salle passe en occupée. Sans confirmation ni mouvement détecté après un délai paramétrable, la réservation est annulée et la salle redevient réservable par tous, immédiatement.
+À l'heure de la réservation, le boîtier demande une confirmation de présence. Seul un appui sur le bouton physique, alors qu'un mouvement vient d'être détecté dans la salle, la fait passer en occupée. Sans cette confirmation à la fin du délai de grâce, la réservation est annulée et la salle redevient réservable par tous, immédiatement.
 
 ### Confirmation de présence
 
-Une salle n'est comptée comme occupée que si quelqu'un s'y trouve vraiment. La double validation associe la détection de présence et l'appui volontaire sur le bouton.
+Une salle n'est comptée comme occupée que si quelqu'un s'y trouve vraiment. La double validation exige les deux à la fois : un mouvement détecté dans la salle et l'appui volontaire sur le bouton. L'un sans l'autre ne suffit jamais à confirmer.
+
+1. **Réservation** : à l'heure prévue, l'anneau passe à l'orange et le boîtier attend une confirmation.
+2. **Période de grâce** : le boîtier laisse un délai pour confirmer, réglé par le responsable désigné dans l'entreprise.
+3. **Signaux de présence** : le capteur de mouvement indique si quelqu'un est dans la salle. Le niveau sonore, calculé dans le boîtier, sert seulement à maintenir une salle déjà confirmée.
+4. **Confirmation** : un appui sur le bouton, alors qu'un mouvement vient d'être détecté, fait passer la salle en occupée (rouge).
+5. **Maintien ou libération** : la salle reste occupée tant que du mouvement ou du son est détecté. Après un délai sans aucun signal, l'anneau repasse à l'orange et une nouvelle confirmation est demandée. Sans réponse, la salle est libérée.
+
+| Situation | Résultat |
+|---|---|
+| Quelqu'un entre mais n'appuie jamais sur le bouton | La salle reste en attente, puis elle est libérée à la fin de la période de grâce |
+| Quelqu'un passe devant le capteur sans appuyer | Rien n'est confirmé, la salle reste en attente |
+| Le bouton est pressé dans une salle vide | L'appui est refusé faute de mouvement, la salle reste en attente |
+| Du son est détecté, mais aucun mouvement, pendant la période de grâce | Rien n'est confirmé : le son ne confirme jamais une réservation |
+| Une réunion est confirmée, puis les participants restent assis et parlent | La salle reste occupée grâce au son, même sans mouvement |
+| Une réunion est confirmée, puis la salle se vide | Après le délai sans signal, une nouvelle confirmation est demandée, puis la salle est libérée
 
 ### Libération automatique
 
-Le créneau abandonné retourne dans les salles disponibles sans qu'un administrateur ait à intervenir. Le délai avant libération est réglé par l'entreprise.
+Le créneau abandonné retourne dans les salles disponibles sans qu'un administrateur ait à intervenir. Le délai avant libération est réglé par le responsable désigné dans l'entreprise.
 
 ### Statut lisible depuis le couloir
 
@@ -32,7 +47,12 @@ Taux d'occupation réel, temps moyen d'utilisation, salles les plus et les moins
 
 ### Confidentialité par conception
 
-Aucune caméra, aucun enregistrement audio ni vidéo, microphone désactivable physiquement. Le boîtier ne remonte aucune donnée nominative : seulement des événements de présence et de confirmation.
+Aucune caméra, aucun enregistrement audio ni vidéo, microphone désactivable physiquement.
+
+- **Traitement du son 100 % local** : le boîtier ne calcule qu'un niveau sonore, au-dessus ou en dessous d'un seuil, sur quelques secondes. Le son brut n'est jamais stocké ni transmis, et l'indicateur sonore lui-même ne quitte pas le boîtier.
+- **Données envoyées au serveur** : uniquement des événements anonymes, à savoir l'identifiant de la salle, l'heure et le type d'événement (mouvement, confirmation, libération). Aucune donnée nominative.
+- **Durée de conservation** : réglée par le responsable désigné dans l'entreprise.
+- **Accès aux statistiques** : les responsables de l'entreprise, selon leur matrice RACI interne. Les administrateurs OptiSpace n'y accèdent que pour traiter des incidents et assurer la maintenance. Les collaborateurs voient seulement si chaque salle est libre ou occupée en temps réel.
 
 ---
 
@@ -44,10 +64,10 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 |---|---|
 | Nom commercial | OptiSpace |
 | Type | Boîtier IoT de gestion de salle, application web et mobile, service cloud avec analyse des résultats par IA |
-| Détection de présence | Détection de mouvement, complétée par une confirmation manuelle au bouton |
-| Interface | Bouton de confirmation physique, écran d'état, anneau LED tricolore, signal sonore de vérification |
+| Détection de présence | Détection de mouvement et appui sur le bouton, les deux étant exigés pour confirmer. Niveau sonore, calculé dans le boîtier, utilisé seulement pour maintenir une salle déjà confirmée |
+| Interface | Bouton de confirmation physique, écran d'état, anneau LED tricolore |
 | Caméra | Aucune |
-| Microphone | Présent pour la détection sonore de présence, désactivable physiquement. Aucun enregistrement audio. |
+| Microphone | Présent pour mesurer un niveau sonore, calculé dans le boîtier, qui sert à maintenir une salle déjà confirmée et ne confirme jamais seul une réservation. Désactivable physiquement. Aucun enregistrement, le son brut ne quitte jamais le boîtier. |
 | Connectivité | Wi-Fi |
 | Alimentation | USB-C |
 | Installation | Pose sur table, aucun câblage réseau ni travaux |
