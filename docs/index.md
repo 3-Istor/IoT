@@ -1,58 +1,58 @@
 ---
 layout: default
 headline: "OptiSpace libère les salles de réunion réservées et jamais occupées"
-lede: "Un boîtier posé sur la table de chaque salle demande une confirmation de présence. Sans confirmation, la salle se libère d'elle-même et redevient réservable par tous."
+lede: "Un boîtier posé sur la table de chaque salle détecte si quelqu'un est présent. Si personne n'arrive, le réservant est prévenu, puis la salle se libère d'elle-même et redevient réservable par tous."
 ---
 
 ## Le produit {#produit}
 
-OptiSpace est un système de gestion automatique des salles de réunion. Il associe un boîtier IoT installé dans chaque salle, une application web et mobile, un backend cloud et une couche d'analyse d'usage.
+OptiSpace est un système de gestion automatique des salles de réunion. Il associe un boîtier IoT installé dans chaque salle, une application web utilisable sur ordinateur et sur téléphone, un backend cloud et une couche d'analyse d'usage.
 
-À l'heure de la réservation, le boîtier demande une confirmation de présence. Seul un appui sur le bouton physique, alors qu'un mouvement vient d'être détecté dans la salle, la fait passer en occupée. Sans cette confirmation à la fin du délai de grâce, la réservation est annulée et la salle redevient réservable par tous, immédiatement.
+À l'heure de la réservation, le boîtier vérifie que quelqu'un est là. Une présence détectée suffit, sans aucun geste. Si personne n'est là, le réservant reçoit une notification. Sans présence à la fin du délai de grâce, le reste du créneau est libéré et redevient réservable par tous.
 
-### Confirmation de présence
+### Détection de présence
 
-Une salle n'est comptée comme occupée que si quelqu'un s'y trouve vraiment. La double validation exige les deux à la fois : un mouvement détecté dans la salle et l'appui volontaire sur le bouton. L'un sans l'autre ne suffit jamais à confirmer.
+Une salle n'est comptée comme occupée que si quelqu'un s'y trouve vraiment. Les radars du boîtier détectent les personnes, même assises et immobiles. Un bouton sur l'écran permet aussi de signaler sa présence.
 
-1. **Réservation** : à l'heure prévue, l'anneau passe à l'orange et le boîtier attend une confirmation.
-2. **Période de grâce** : le boîtier laisse un délai pour confirmer, réglé par le responsable désigné dans l'entreprise.
-3. **Signaux de présence** : le capteur de mouvement indique si quelqu'un est dans la salle. Le niveau sonore, calculé dans le boîtier, sert seulement à maintenir une salle déjà confirmée.
-4. **Confirmation** : un appui sur le bouton, alors qu'un mouvement vient d'être détecté, fait passer la salle en occupée (rouge).
-5. **Maintien ou libération** : la salle reste occupée tant que du mouvement ou du son est détecté. Après un délai sans aucun signal, l'anneau repasse à l'orange et une nouvelle confirmation est demandée. Sans réponse, la salle est libérée.
+1. **Réservation** : à l'heure prévue, l'anneau passe à l'orange tant que personne n'est détecté.
+2. **Présence** : dès qu'une présence est détectée, ou que quelqu'un appuie sur le bouton de l'écran, la salle passe en occupée (rouge).
+3. **Absence au début** : si personne n'est là, le réservant est prévenu. Sans présence à la fin du délai de grâce, la salle est libérée.
+4. **Départ en cours de réunion** : si la salle reste vide pendant le délai de grâce, le réservant est prévenu, puis le reste du créneau est libéré.
+5. **Incertitude** : si le boîtier ne peut plus vérifier la présence, la salle n'est jamais libérée par erreur.
 
 | Situation | Résultat |
 |---|---|
-| Quelqu'un entre mais n'appuie jamais sur le bouton | La salle reste en attente, puis elle est libérée à la fin de la période de grâce |
-| Quelqu'un passe devant le capteur sans appuyer | Rien n'est confirmé, la salle reste en attente |
-| Le bouton est pressé dans une salle vide | L'appui est refusé faute de mouvement, la salle reste en attente |
-| Du son est détecté, mais aucun mouvement, pendant la période de grâce | Rien n'est confirmé : le son ne confirme jamais une réservation |
-| Une réunion est confirmée, puis les participants restent assis et parlent | La salle reste occupée grâce au son, même sans mouvement |
-| Une réunion est confirmée, puis la salle se vide | Après le délai sans signal, une nouvelle confirmation est demandée, puis la salle est libérée
+| Quelqu'un arrive à l'heure | La présence est détectée et la réservation conservée, sans aucun geste |
+| Personne n'arrive | Le réservant est prévenu, puis la salle est libérée à la fin du délai de grâce |
+| Les participants partent avant la fin | Après le délai sans présence, le réservant est prévenu, puis le reste du créneau est libéré |
+| Quelqu'un appuie sur le bouton de l'écran | Sa présence est prise en compte immédiatement |
+| Le boîtier perd sa connexion | Aucune libération tant que la présence ne peut pas être vérifiée |
+| Le réservant arrive après la libération | La réservation n'est pas restaurée ; il peut réserver de nouveau si la salle est libre |
 
 ### Libération automatique
 
-Le créneau abandonné retourne dans les salles disponibles sans qu'un administrateur ait à intervenir. Le délai avant libération est réglé par le responsable désigné dans l'entreprise.
+Le créneau abandonné retourne dans les salles disponibles sans qu'un administrateur ait à intervenir. Les personnes qui cherchaient une salle sans en trouver sont prévenues. Le délai de grâce, 10 minutes par défaut, est réglé par le Facility Manager de l'entreprise.
 
 ### Statut lisible depuis le couloir
 
-Un anneau LED indique l'état de la salle : vert pour libre, orange en attente de confirmation, rouge pour occupée, sans avoir à ouvrir son agenda.
+Un anneau LED indique l'état de la salle : vert pour libre, orange pour réservée en attente de présence, rouge pour occupée, bleu en cas d'incident. Pas besoin d'ouvrir son agenda.
 
-### Application web et mobile
+### Application web, sur ordinateur et sur téléphone
 
-Les salles disponibles et occupées en temps réel, la réservation depuis l'application, les notifications. Les connecteurs Google Calendar et Microsoft Outlook sont prévus dans une version ultérieure.
+Sans installation : les salles disponibles et occupées en temps réel, la réservation, les notifications, et une alerte quand une salle se libère. Les connecteurs Google Calendar et Microsoft Outlook sont prévus dans une version ultérieure.
 
 ### Tableau de bord d'occupation
 
-Taux d'occupation réel, temps moyen d'utilisation, salles les plus et les moins utilisées, détection des réservations fantômes récurrentes.
+Réservé au Facility Manager : taux d'occupation réel, temps moyen d'utilisation, salles les plus et les moins utilisées, réservations fantômes récurrentes, avec une synthèse et des recommandations générées par IA.
 
 ### Confidentialité par conception
 
 Aucune caméra, aucun enregistrement audio ni vidéo, microphone désactivable physiquement.
 
-- **Traitement du son 100 % local** : le boîtier ne calcule qu'un niveau sonore, au-dessus ou en dessous d'un seuil, sur quelques secondes. Le son brut n'est jamais stocké ni transmis, et l'indicateur sonore lui-même ne quitte pas le boîtier.
-- **Données envoyées au serveur** : uniquement des événements anonymes, à savoir l'identifiant de la salle, l'heure et le type d'événement (mouvement, confirmation, libération). Aucune donnée nominative.
+- **Traitement du son 100 % local** : le boîtier ne calcule qu'un niveau sonore, au-dessus ou en dessous d'un seuil, sur quelques secondes. Le son brut n'est jamais stocké ni transmis.
+- **Données envoyées par le boîtier** : uniquement des mesures anonymes, à savoir l'identifiant du boîtier, l'heure, la présence détectée ou non et l'appui sur le bouton. Aucune donnée nominative.
 - **Durée de conservation** : réglée par le responsable désigné dans l'entreprise.
-- **Accès aux statistiques** : les responsables de l'entreprise, selon leur matrice RACI interne. Les administrateurs OptiSpace n'y accèdent que pour traiter des incidents et assurer la maintenance. Les collaborateurs voient seulement si chaque salle est libre ou occupée en temps réel.
+- **Accès aux statistiques** : les Facility Managers désignés par l'entreprise. Les administrateurs OptiSpace n'y accèdent que pour traiter des incidents et assurer la maintenance. Les collaborateurs voient seulement si chaque salle est libre ou occupée en temps réel.
 
 ---
 
@@ -63,11 +63,11 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 | Caractéristique | Détail |
 |---|---|
 | Nom commercial | OptiSpace |
-| Type | Boîtier IoT de gestion de salle, application web et mobile, service cloud avec analyse des résultats par IA |
-| Détection de présence | Détection de mouvement et appui sur le bouton, les deux étant exigés pour confirmer. Niveau sonore, calculé dans le boîtier, utilisé seulement pour maintenir une salle déjà confirmée |
-| Interface | Bouton de confirmation physique, écran d'état, anneau LED tricolore |
+| Type | Boîtier IoT de gestion de salle, application web (ordinateur et téléphone), service cloud avec analyse des résultats par IA |
+| Détection de présence | Radars de présence, personnes immobiles comprises. Une présence détectée suffit ; bouton sur l'écran en complément |
+| Interface | Écran tactile avec bouton de présence, anneau LED (vert, orange, rouge, bleu) |
 | Caméra | Aucune |
-| Microphone | Présent pour mesurer un niveau sonore, calculé dans le boîtier, qui sert à maintenir une salle déjà confirmée et ne confirme jamais seul une réservation. Désactivable physiquement. Aucun enregistrement, le son brut ne quitte jamais le boîtier. |
+| Microphone | Mesure un niveau sonore, calculé dans le boîtier. Désactivable physiquement. Aucun enregistrement, le son brut ne quitte jamais le boîtier. |
 | Connectivité | Wi-Fi |
 | Alimentation | USB-C |
 | Installation | Pose sur table, aucun câblage réseau ni travaux |
@@ -76,7 +76,7 @@ Caractéristiques factuelles, à jour au 25 septembre 2027.
 | Abonnement | 39 € HT par mois et par salle jusqu'en 2028 |
 | Disponibilité | 15 janvier 2027 |
 | Distribution | Devis sur demande, directement depuis le site de 3istor Corp |
-| Compatibilités | Application OptiSpace web et mobile. Connecteurs Google Calendar et Microsoft Outlook prévus, pour s'intégrer aux gestionnaires de salles existants |
+| Compatibilités | Application OptiSpace web, sur ordinateur et téléphone. Connecteurs Google Calendar et Microsoft Outlook prévus, pour s'intégrer aux gestionnaires de salles existants |
 
 ---
 
@@ -111,7 +111,7 @@ Téléchargeables directement, sans inscription ni formulaire.
   <div class="carousel-frame">
     <div class="carousel-viewport">
       <ul class="carousel-track">
-        <li class="carousel-slide" data-caption="En réunion : anneau rouge, la présence a été confirmée">
+        <li class="carousel-slide" data-caption="En réunion : anneau rouge, la présence est détectée">
           <img src="assets/images/objet/optispace-situation-01.png" alt="Quatre personnes en réunion autour d'une table, le boîtier OptiSpace au centre, anneau LED rouge, un écran affichant un plan de projet au fond">
         </li>
         <li class="carousel-slide" data-caption="Anneau vert : la salle est libre et réservable">
@@ -124,7 +124,7 @@ Téléchargeables directement, sans inscription ni formulaire.
     <button class="carousel-nav next" type="button" aria-label="Visuel suivant">&rsaquo;</button>
   </div>
   <div class="carousel-bar">
-    <p class="carousel-caption">En réunion : anneau rouge, la présence a été confirmée</p>
+    <p class="carousel-caption">En réunion : anneau rouge, la présence est détectée</p>
     <div class="carousel-dots" role="tablist" aria-label="Choisir un visuel"></div>
     <a class="carousel-dl" href="assets/images/objet/optispace-situation-01.png" download>Télécharger ce visuel</a>
   </div>
